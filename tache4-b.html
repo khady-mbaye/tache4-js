@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITION SWITCH</title>
+</head>
+<body>
+    
+
+    <script>
+        let vehicule = prompt('Quel vehicule souhaitez-vous ? peugeot , BMW , ferrari').toLowerCase();
+        let km = prompt('Combien de kilometre doit-tu parcourir');
+        const prix = {
+            peugeot : 0.4,
+            BMW : 0.6,
+            ferrari :0.8,
+        }
+        switch(vehicule){
+            case 'peugeot':{
+                alert('vous devez payez :' + prix.peugeot * km + '$');
+                break;
+            }
+            case 'BMW':{
+                alert('vous devez payez :' + prix.BMW * km + '$');
+                break;
+            }
+            case 'ferrari':{
+                alert('vous devez payez :' + prix.ferrari * km + '$');
+                break;
+            }
+            default :{
+                alert('veillez choisir un vehicule')
+            }
+        }
+        
+    </script>
+</body>
+</html>
